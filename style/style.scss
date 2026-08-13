@@ -1,6 +1,7 @@
 $backgroundColor: #222831;
 $mainColor: #00ADB5;
 $borderColor: #393E46;
+$border: 0.3rem solid $borderColor;
 
 body{
     font-family: "Poppins", sans-serif;
@@ -8,7 +9,7 @@ body{
     margin: 2vh 2vw;
     text-align: center;
     header{
-        border: 0.5rem solid $borderColor;
+        border: $border;
         padding-top: 1vh;
         border-radius: 20px;
         background-color:$mainColor;
