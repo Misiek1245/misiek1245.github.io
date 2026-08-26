@@ -1,6 +1,7 @@
 $backgroundColor: #222831;
 $mainColor: #00ADB5;
 $borderColor: #393E46;
+$shadow: rgba(238, 238, 238, 0.25);
 $border: 0.3rem solid $borderColor;
 
 body{
@@ -8,7 +9,12 @@ body{
     background-color: $backgroundColor;
     margin: 2vh 2vw;
     text-align: center;
-    header{
+    header a{
+      text-decoration: none;
+      color: black;
+    }
+    header, footer{
+        margin: 2vh 2vw;
         border: $border;
         padding-top: 1vh;
         border-radius: 20px;
@@ -16,6 +22,30 @@ body{
         font-size: 6vh;
         height: 10vh;
     }
+    footer{
+      font-size: small ;
+    } 
+    .grid{ 
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2vh 1vw;
+      div{
+          margin: auto;
+          border: $border;
+          padding-top: 1vh;
+          border-radius: 20px;
+          background-color:$mainColor;
+          height: 30vh;
+          width: 42vw;
+          &#itch{
+            font-size: 4vh;
+          }
+          &:hover{
+            transform: scale(1.01);
+            box-shadow: 0.1vh 0.1vw 10px $shadow;
+          }
+      }
+  }
 }
 
 //font

@@ -4,13 +4,42 @@ body {
   margin: 2vh 2vw;
   text-align: center;
 }
-body header {
+body header a {
+  text-decoration: none;
+  color: black;
+}
+body header, body footer {
+  margin: 2vh 2vw;
   border: 0.3rem solid #393E46;
   padding-top: 1vh;
   border-radius: 20px;
   background-color: #00ADB5;
   font-size: 6vh;
   height: 10vh;
+}
+body footer {
+  font-size: small;
+}
+body .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vh 1vw;
+}
+body .grid div {
+  margin: auto;
+  border: 0.3rem solid #393E46;
+  padding-top: 1vh;
+  border-radius: 20px;
+  background-color: #00ADB5;
+  height: 30vh;
+  width: 42vw;
+}
+body .grid div#itch {
+  font-size: 4vh;
+}
+body .grid div:hover {
+  transform: scale(1.01);
+  box-shadow: 0.1vh 0.1vw 10px rgba(238, 238, 238, 0.25);
 }
 
 .poppins-thin {
